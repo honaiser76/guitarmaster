@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f2ca50",
+              "inverse-on-surface": "#313030",
+              "on-surface-variant": "#d0c5af",
+              "background": "#131313",
+              "surface-tint": "#e9c349",
+              "error": "#ffb4ab",
+              "surface-bright": "#393939",
+              "secondary-fixed-dim": "#ffb77d",
+              "tertiary-fixed": "#dbe1ff",
+              "on-secondary-fixed-variant": "#6e3900",
+              "on-error": "#690005",
+              "on-secondary-container": "#603100",
+              "on-primary": "#3c2f00",
+              "on-error-container": "#ffdad6",
+              "secondary-fixed": "#ffdcc3",
+              "surface-container": "#201f1f",
+              "secondary": "#ffb77d",
+              "on-tertiary-container": "#254188",
+              "primary-container": "#d4af37",
+              "on-primary-container": "#554300",
+              "surface-variant": "#353534",
+              "on-primary-fixed": "#241a00",
+              "tertiary-container": "#97b0ff",
+              "secondary-container": "#fd8b00",
+              "primary-fixed": "#ffe088",
+              "on-primary-fixed-variant": "#574500",
+              "inverse-primary": "#735c00",
+              "outline": "#99907c",
+              "surface-container-high": "#2a2a2a",
+              "surface": "#131313",
+              "primary-fixed-dim": "#e9c349",
+              "on-tertiary-fixed-variant": "#27438a",
+              "tertiary": "#bfcdff",
+              "on-tertiary-fixed": "#00174b",
+              "error-container": "#93000a",
+              "surface-container-lowest": "#0e0e0e",
+              "on-secondary": "#4d2600",
+              "surface-dim": "#131313",
+              "on-secondary-fixed": "#2f1500",
+              "outline-variant": "#4d4635",
+              "inverse-surface": "#e5e2e1",
+              "on-tertiary": "#082b72",
+              "surface-container-low": "#1c1b1b",
+              "surface-container-highest": "#353534",
+              "tertiary-fixed-dim": "#b4c5ff",
+              "on-surface": "#e5e2e1",
+              "on-background": "#e5e2e1"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sunburst-gradient {
+            background: radial-gradient(circle at center, #d4af37 0%, #131313 70%);
+            opacity: 0.15;
+        }
+        .editorial-line {
+            height: 1px;
+            background: linear-gradient(to right, #f2ca50 0%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-[#131313] dark:bg-[#131313] shadow-[0_24px_48px_rgba(0,0,0,0.06)] fixed top-0 w-full z-50 flex justify-between items-center px-12 py-6 max-w-none">
+<div class="text-2xl font-serif italic font-bold text-[#F2CA50] dark:text-[#D4AF37]">
+        GuitarMaster
+    </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#e5e2e1]/60 hover:text-[#e5e2e1] transition-colors font-sans Manrope tracking-tight" href="home.html">Home</a>
+<a class="text-[#F2CA50] border-b-2 border-[#D4AF37] pb-1 font-bold font-sans Manrope tracking-tight" href="about.html">About</a>
+<a class="text-[#e5e2e1]/60 hover:text-[#e5e2e1] transition-colors font-sans Manrope tracking-tight" href="theory_tools.html">Theory &amp; Tools</a>
+<a class="text-[#e5e2e1]/60 hover:text-[#e5e2e1] transition-colors font-sans Manrope tracking-tight" href="case_study.html">Case Study</a>
+<a class="text-[#e5e2e1]/60 hover:text-[#e5e2e1] transition-colors font-sans Manrope tracking-tight" href="resources.html">Resources</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-[#F2CA50] cursor-pointer hover:text-[#FFB77D] transition-all duration-300">tune</span>
+<span class="material-symbols-outlined text-[#F2CA50] cursor-pointer hover:text-[#FFB77D] transition-all duration-300">account_circle</span>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<header class="relative px-12 mb-24 overflow-hidden">
+<div class="sunburst-gradient absolute inset-0 -z-10"></div>
+<div class="max-w-6xl mx-auto flex flex-col items-start gap-4">
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-xs">A Digital Masterclass Platform</span>
+<h1 class="font-headline italic text-6xl md:text-8xl leading-tight text-on-surface">About <span class="text-primary">GuitarMaster.</span></h1>
+<p class="max-w-2xl text-on-surface-variant text-lg leading-relaxed mt-4">GuitarMaster is a capstone project concept focused on helping beginner and intermediate guitarists learn music theory in a more visual, interactive, and practical way. This website presents the idea behind the platform and explains how digital tools can support music learning in accessible and engaging ways.</p>
+<div class="editorial-line w-48 mt-8"></div>
+</div>
+</header>
+<!-- About the Project Section -->
+<section class="px-12 mb-32">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-5 relative group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden rounded-sm relative">
+<img alt="Professional acoustic guitar detailing" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Close up of high-end acoustic guitar bridge and strings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmNYzTfG3B9ix7FPRIhsQ955CzoRvtTgY1sOPFbxyIC6fw0KlgIzZQi9NZj6AbBEFYbbYW6iQdpQQuKk8miN1XJER1mb5LXN8SgjEDHNu_yxWkrnVbP3qARz0wEhtRTbn1Kjakyjbafo6yLAkhOXlE5WLqomi_6k4OYR3uhYnMIkubx2MURqfcUA6xHNEPGszq-mXzu3jODbGqXL6IGjcl6c8kz_UPPMNH-wdatZdUfMyd9R_6tPbyfdmRs6ZzPkvn8ClgtFhdfkAX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+</div>
+<div class="absolute -bottom-6 -right-6 p-8 bg-surface-container-high border-l-4 border-primary-container shadow-xl max-w-[280px]">
+<p class="font-headline italic text-xl text-primary">"Making theory intuitive and connected to real playing."</p>
+</div>
+</div>
+<div class="md:col-span-7 flex flex-col justify-center space-y-8">
+<h2 class="font-headline text-4xl italic text-on-surface">About the Project</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>The project was developed to explore the relationship between digital media, user experience, and music education. GuitarMaster connects musical concepts directly to the guitar fretboard so learners can better understand scales, chords, intervals, harmony, and composition. Instead of learning theory only through text or static diagrams, users interact with a system designed to make theory more intuitive and connected to real playing.</p>
+<div class="pt-6">
+<h2 class="font-headline text-4xl italic text-on-surface mb-6">Project Vision</h2>
+<p>The vision of GuitarMaster is to create a digital learning experience that supports both technical development and conceptual understanding. The platform explores how emerging technologies such as AI, interactive interfaces, and personalized learning paths can make music education more adaptive, motivating, and relevant to modern learners.</p>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+<!-- About Video Section -->
+<section class="px-12 mb-32">
+<div class="max-w-6xl mx-auto">
+<div class="mb-8">
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-xs">Project Video</span>
+<h2 class="font-headline text-4xl italic text-on-surface mt-3">See the idea behind <span class="text-primary">GuitarMaster</span></h2>
+<p class="max-w-3xl text-on-surface-variant text-lg leading-relaxed mt-4">This video adds more context to the GuitarMaster concept and helps explain the project’s direction, inspiration, and educational focus.</p>
+</div>
+<div class="relative overflow-hidden rounded-sm border border-outline-variant/30 bg-surface-container-low shadow-2xl">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+<iframe
+src="https://www.youtube.com/embed/t2E8aGKCjxo?start=23"
+title="GuitarMaster About Video"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- About the Creator Section -->
+<section id="about-creator" class="px-12 py-32 bg-[#1a1a1a] relative overflow-hidden border-y border-primary/10">
+<!-- Decorative background elements -->
+<div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+<div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] bg-secondary rounded-full blur-[100px]"></div>
+</div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-center relative z-10">
+<!-- Image Container with Premium Framing -->
+<div class="w-full md:w-5/12 relative group">
+<div class="absolute -inset-4 border border-primary/30 translate-x-4 translate-y-4 transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+<div class="relative aspect-[4/5] overflow-hidden shadow-2xl bg-surface-container-high">
+<img alt="Rafael Biacchi Bond Honaiser" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujwNITpyX1_EQBomawQ8Ni_U9gb_KV02pAax8XKYb0RcbGaCLSvze21SxzC-ajzuvlgu9VWwKLXbVdIZU-jO-QgkZwgar-3KMClwReuehYat5Ssz4JsaxmLa7efYAWX9L-clOiwtseZEsC6VbgfitTkNday9AZjWJPztFggn0B1dkl6Mq0EdKatuGUSe7GErF-SK97zT4zsA66ttLip1eLDRlIGCJalYFbRO4i_gQrAwxsx5EokZcaCSCcvgL0-_StYFKKncSibaWI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+</div>
+<div class="absolute -bottom-10 -left-10 hidden lg:block">
+<div class="bg-primary px-6 py-4 text-on-primary text-xs font-bold tracking-[0.3em] uppercase transform -rotate-90 origin-bottom-right">Digital Media</div>
+</div>
+</div>
+<!-- Editorial Text Content -->
+<div class="flex-1 space-y-8">
+<div>
+<span class="font-label text-primary uppercase tracking-[0.4em] text-xs mb-4 block font-bold">The Visionary</span>
+<h2 class="font-headline text-6xl md:text-7xl italic text-on-surface leading-none mb-6">About the <br/><span class="text-primary-container">Creator.</span></h2>
+<div class="h-px w-24 bg-primary/40 mb-8"></div>
+</div>
+<div class="space-y-6">
+<p class="font-headline text-3xl italic text-on-surface underline underline-offset-8 decoration-primary/20">Rafael Biacchi Bond Honaiser</p>
+<div class="space-y-4 text-on-surface-variant text-lg leading-relaxed max-w-xl">
+<p>My name is Rafael Biacchi Bond Honaiser, and I created GuitarMaster as part of my Digital Media capstone work. This project reflects my deep-seated interest in the intersection of music, education, and user-centric design.</p>
+<p>Through this concept, I aim to demonstrate how thoughtful technology can work in harmony with traditional learning to make complex music theory more accessible, engaging, and intuitive for guitarists everywhere.</p>
+</div>
+</div>
+<!-- Contact & Social -->
+<div class="flex items-center gap-8 pt-10">
+<a class="flex items-center gap-4 text-on-surface hover:text-primary transition-colors group" href="mailto:rafael@example.com">
+<div class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Inquiries</span>
+<span class="font-label text-sm uppercase tracking-widest font-bold">Contact Rafael</span>
+</div>
+</a>
+<div class="w-px h-12 bg-outline-variant/30"></div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors cursor-pointer border border-transparent hover:border-outline-variant">
+<span class="material-symbols-outlined text-lg">share</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Grid -->
+<section class="px-12 py-32">
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<div class="bg-surface-container-low p-10 rounded-sm border-t-2 border-primary">
+<h3 class="font-headline text-2xl italic mb-4">Academic Focus</h3>
+<p class="text-on-surface-variant leading-relaxed">Digital Media, user experience, and interactive learning</p>
+</div>
+<div class="bg-surface-container-high p-10 rounded-sm border-t-2 border-secondary">
+<h3 class="font-headline text-2xl italic mb-4">Project Theme</h3>
+<p class="text-on-surface-variant leading-relaxed">Music education through digital tools</p>
+</div>
+<div class="bg-surface-container-highest p-10 rounded-sm border-t-2 border-primary-container">
+<h3 class="font-headline text-2xl italic mb-4">Research Interest</h3>
+<p class="text-on-surface-variant leading-relaxed">AI-supported learning and visual communication</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-12 flex flex-col md:flex-row justify-between items-center gap-8 border border-outline-variant/20">
+<div class="max-w-xl">
+<h3 class="font-headline text-4xl italic mb-4 text-on-surface">Why this website exists</h3>
+<p class="text-on-surface-variant">This website was created to present GuitarMaster as both a creative concept and a digital media project. It demonstrates how content organization, design, and technology can support educational communication in a clear and engaging way.</p>
+</div>
+<button class="bg-primary-container text-on-primary-container px-10 py-4 font-bold uppercase tracking-widest text-xs rounded-sm hover:scale-105 transition-transform duration-300 shadow-lg shrink-0">
+                    View Project Pages
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0d0d0d] dark:bg-[#0d0d0d] border-t border-[#F2CA50]/10 w-full px-12 py-10 flex flex-col md:flex-row justify-between items-center">
+<div class="text-lg font-serif italic text-[#F2CA50] mb-6 md:mb-0">
+        GuitarMaster
+    </div>
+<div class="flex flex-col items-center gap-4">
+<span class="font-sans Manrope text-xs uppercase tracking-widest text-[#e5e2e1]/40">
+            Rafael Biacchi Bond Honaiser - University of Niagara Falls
+        </span>
+<div class="flex space-x-8">
+<a class="font-sans Manrope text-xs uppercase tracking-widest text-[#e5e2e1]/40 hover:text-[#F2CA50] transition-colors" href="privacy_policy.html">Privacy Policy</a>
+<a class="font-sans Manrope text-xs uppercase tracking-widest text-[#e5e2e1]/40 hover:text-[#F2CA50] transition-colors" href="terms_of_service.html">Terms of Service</a>
+<a class="font-sans Manrope text-xs uppercase tracking-widest text-[#e5e2e1]/40 hover:text-[#F2CA50] transition-colors" href="about.html#about-creator">Contact</a>
+</div>
+</div>
+<div class="mt-6 md:mt-0 flex space-x-4 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[#D4AF37]">share</span>
+<span class="material-symbols-outlined text-[#D4AF37]">history</span>
+</div>
+</footer>
+</body></html>
